@@ -4,21 +4,24 @@ using UnityEngine;
 public class PlatformSaver : MonoBehaviour
 {
     [SerializeField] private CharacterJump characterJump;
-    [SerializeField] private Transform player;
-    [SerializeField] private Transform leftPoint;
-    [SerializeField] private Transform rightPoint;
-    [SerializeField] private float speed = 6f;
+    [SerializeField] private float moveDistance = 2f;
+    [SerializeField] private float speed = 20f;
     [SerializeField] private float reactionDelay = 0.1f;
 
     private Rigidbody2D rb;
+    private Vector2 leftPos;
+    private Vector2 rightPos;
     private Vector2 target;
+    private bool atLeft = true;
     private float delayTimer = -1f;
     private bool armed;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        target = rb.position;
+        leftPos = rb.position;
+        rightPos = leftPos + Vector2.right * moveDistance;
+        target = leftPos;
     }
 
     private void OnEnable()
@@ -38,9 +41,8 @@ public class PlatformSaver : MonoBehaviour
     {
         if (!armed) return;
 
-        float middle = (leftPoint.position.x + rightPoint.position.x) / 2f;
-
-        target = player.position.x > middle ? leftPoint.position : rightPoint.position;
+        atLeft = !atLeft;
+        target = atLeft ? leftPos : rightPos;
         delayTimer = reactionDelay;
     }
 

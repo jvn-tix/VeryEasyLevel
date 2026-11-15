@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 81c92e5999e24dd478c20d93e81e4d84
+guid: 2fc2946c6fb0f094c884c74d6361375b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2987179049035696926
-    second: walking_0
-  - first:
-      213: -4154626181522259262
-    second: walking_1
-  - first:
-      213: -7423615830899905516
-    second: walking_2
-  - first:
-      213: 4036955197636849006
-    second: walking_3
-  - first:
-      213: -7918336409512017615
-    second: walking_4
+      213: -3770768410589662904
+    second: Tree2 (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -63,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -125,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walking_0
+      name: Tree2 (1)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 17
-        height: 16
+        width: 48
+        height: 94
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,96 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2e4fcbd4b786b86d0800000000000000
-      internalID: -2987179049035696926
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2c204d3008dc756c0800000000000000
-      internalID: -4154626181522259262
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 14
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 41cae3adbb40af890800000000000000
-      internalID: -7423615830899905516
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e6daf411d55260830800000000000000
-      internalID: 4036955197636849006
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking_4
-      rect:
-        serializedVersion: 2
-        x: 65
-        y: 0
-        width: 14
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1318efa1dfa6c1290800000000000000
-      internalID: -7918336409512017615
+      spriteID: 841f984eb1a8babc0800000000000000
+      internalID: -3770768410589662904
       vertices: []
       indices: 
       edges: []
@@ -248,11 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      walking_0: -2987179049035696926
-      walking_1: -4154626181522259262
-      walking_2: -7423615830899905516
-      walking_3: 4036955197636849006
-      walking_4: -7918336409512017615
+      Tree2 (1)_0: -3770768410589662904
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

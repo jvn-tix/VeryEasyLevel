@@ -18,6 +18,8 @@ GameObject:
   - component: {fileID: 2692539835176548489}
   - component: {fileID: 3820322559730775839}
   - component: {fileID: 5164023822496557314}
+  - component: {fileID: 8292749376996278784}
+  - component: {fileID: 2993535698667701472}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -35,9 +37,10 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.84, y: -1.41, z: 0}
-  m_LocalScale: {x: 7, y: 7, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 5516118380253577111}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2581965620561222255
@@ -90,7 +93,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 8793639957104055765, guid: 7ddaafb13e19fe1418be556b3080b8ef, type: 3}
-  m_Color: {r: 0.44076347, g: 0, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -133,8 +136,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0020126873, y: 0.0015687433}
-  m_Size: {x: 0.12986791, y: 0.15124206}
+  m_Offset: {x: -0.0020124912, y: -0.040646702}
+  m_Size: {x: 0.75606203, y: 0.9706568}
   m_Direction: 0
 --- !u!50 &599041475477949323
 Rigidbody2D:
@@ -151,7 +154,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -319,7 +322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 428972de327e94841bdce73b16097af4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterJump
-  jumpForce: 7
+  jumpForce: 12
 --- !u!114 &2692539835176548489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,3 +369,65 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8292749376996278784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3819177805851554828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15cb11e095ca3ff4ba9fef15b0d9a864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GroundChecker
+  groundCheckPoint: {fileID: 5516118380253577111}
+  checkRadius: 0.1
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+--- !u!114 &2993535698667701472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3819177805851554828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc301499e618ced43a7c7eaf21b99920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterSFX
+  jumpClip: {fileID: 8300000, guid: 4d9cb808a66572742a56628c72d17c82, type: 3}
+  deathClip: {fileID: 8300000, guid: d158bd61051fb894fbf6c9dfd0a20754, type: 3}
+--- !u!1 &3933876359125333381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5516118380253577111}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5516118380253577111
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3933876359125333381}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.027, y: -0.509, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5124097412019634411}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

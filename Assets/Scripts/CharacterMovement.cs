@@ -6,6 +6,7 @@ public class CharacterMovement : MonoBehaviour
 
     private Rigidbody2D rb;
     private Animator animator;
+    private GroundChecker groundChecker;
     private Vector2 movementInput;
     public bool isFacingRight = false;
 
@@ -13,6 +14,7 @@ public class CharacterMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        groundChecker = GetComponent<GroundChecker>();
     }
     
     public void OnMove(InputAction.CallbackContext context)
@@ -27,6 +29,8 @@ public class CharacterMovement : MonoBehaviour
         HandleFlip();
 
         animator.SetFloat("Speed", Mathf.Abs(movementInput.x));
+        animator.SetBool("isGrounded", groundChecker.IsGrounded());
+        animator.SetFloat("yVelocity", rb.linearVelocity.y);
     }
 
     void HandleFlip()

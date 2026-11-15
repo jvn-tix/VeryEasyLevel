@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: e7650b283daa9a2439b951f81f7ca718
+guid: e635955d053b3c04e92d647e9efde999
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4281637774074219296
-    second: jump_0
+      213: -8512884918041957230
+    second: Spike_jumping_0
   - first:
-      213: -7862396843884538191
-    second: jump_1
+      213: -3957355658660755028
+    second: Spike_jumping_1
   - first:
-      213: 8276514422256456541
-    second: jump_2
+      213: 1041266463354022431
+    second: Spike_jumping_2
   - first:
-      213: -3697937850672776721
-    second: jump_3
+      213: 6722584859330957175
+    second: Spike_jumping_3
+  - first:
+      213: -4742460295431697069
+    second: Spike_jumping_4
+  - first:
+      213: 4176806872865781524
+    second: Spike_jumping_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -84,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -122,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jump_0
+      name: Spike_jumping_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 15
-        height: 13
+        x: 1
+        y: 3
+        width: 17
+        height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 02b8694dede6b6b30800000000000000
-      internalID: 4281637774074219296
+      spriteID: 29c245e25482cd980800000000000000
+      internalID: -8512884918041957230
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_1
+      name: Spike_jumping_1
       rect:
         serializedVersion: 2
-        x: 17
-        y: 0
-        width: 14
-        height: 16
+        x: 18
+        y: 3
+        width: 17
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b61c1d2ab723e290800000000000000
-      internalID: -7862396843884538191
+      spriteID: ca9c4a3def5a419c0800000000000000
+      internalID: -3957355658660755028
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_2
+      name: Spike_jumping_2
       rect:
         serializedVersion: 2
-        x: 33
-        y: 0
-        width: 14
-        height: 16
+        x: 35
+        y: 3
+        width: 17
+        height: 9
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d535ef424061cd270800000000000000
-      internalID: 8276514422256456541
+      spriteID: f1a6eb0e452537e00800000000000000
+      internalID: 1041266463354022431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jump_3
+      name: Spike_jumping_3
       rect:
         serializedVersion: 2
-        x: 49
-        y: 0
-        width: 14
-        height: 16
+        x: 52
+        y: 5
+        width: 17
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +209,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fe97d290e194eacc0800000000000000
-      internalID: -3697937850672776721
+      spriteID: 77f47d0df4b6b4d50800000000000000
+      internalID: 6722584859330957175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_jumping_4
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 3
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35d4669ec756f2eb0800000000000000
+      internalID: -4742460295431697069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spike_jumping_5
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 3
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4173390a8bff6f930800000000000000
+      internalID: 4176806872865781524
       vertices: []
       indices: 
       edges: []
@@ -223,10 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      jump_0: 4281637774074219296
-      jump_1: -7862396843884538191
-      jump_2: 8276514422256456541
-      jump_3: -3697937850672776721
+      Spike_jumping_0: -8512884918041957230
+      Spike_jumping_1: -3957355658660755028
+      Spike_jumping_2: 1041266463354022431
+      Spike_jumping_3: 6722584859330957175
+      Spike_jumping_4: -4742460295431697069
+      Spike_jumping_5: 4176806872865781524
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
