@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,7 +7,8 @@ public class CharacterJump : MonoBehaviour
 {
     [SerializeField] private float jumpForce = 5f;
     private Rigidbody2D rb;
-    //private GroundChecker groundChecker;
+
+    public event Action OnJumped;
 
     private void Awake()
     {
@@ -18,6 +20,7 @@ public class CharacterJump : MonoBehaviour
         if (context.performed /*&& groundChecker.IsGrounded()*/)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            OnJumped?.Invoke();
         }
     }       
 }

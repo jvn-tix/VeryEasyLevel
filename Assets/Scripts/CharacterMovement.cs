@@ -5,12 +5,14 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
 
     private Rigidbody2D rb;
+    private Animator animator;
     private Vector2 movementInput;
-    public bool isFacingRight = true;
+    public bool isFacingRight = false;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
     
     public void OnMove(InputAction.CallbackContext context)
@@ -23,6 +25,8 @@ public class CharacterMovement : MonoBehaviour
         rb.linearVelocity = new Vector2(movementInput.x * moveSpeed, rb.linearVelocity.y);
 
         HandleFlip();
+
+        animator.SetFloat("Speed", Mathf.Abs(movementInput.x));
     }
 
     void HandleFlip()
