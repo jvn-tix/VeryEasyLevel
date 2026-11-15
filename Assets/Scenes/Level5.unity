@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c312bc213033d748abc34b917b477e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelProgress
-  player: {fileID: 0}
+  player: {fileID: 2123975391}
   loadDelay: 0.5
 --- !u!4 &103457264
 Transform:
@@ -2309,6 +2309,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5124097412019634411, guid: 303d0048bae97fc46bccac9af6a88d31, type: 3}
   m_PrefabInstance: {fileID: 2123975389}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2123975391 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2692539835176548489, guid: 303d0048bae97fc46bccac9af6a88d31, type: 3}
+  m_PrefabInstance: {fileID: 2123975389}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a7f4c0d6e4083f469ea65d103ee71fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterDeath
 --- !u!1001 &5754226667942958138
 PrefabInstance:
   m_ObjectHideFlags: 0
